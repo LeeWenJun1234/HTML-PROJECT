@@ -1,0 +1,126 @@
+<html>
+    <head>
+        <title>Wen Jun Webpage - Contact page</title>
+
+        <style>
+    header {
+        background-color: #333;
+        color: white;
+        padding: 40px;       
+        font-size: 24px;     
+        text-align: center;
+    }
+
+    body {
+        background-color: rgb(39, 43, 43);
+        color: rgb(6, 236, 75);
+        text-align: center;
+    }
+
+    nav {
+      background-color: #555;
+      padding: 10px 0;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .phone {
+      background-color: rgb(64, 71, 94);
+      color: #fafafa;
+      max-width: 1000%;
+      margin:30px auto;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      font-size: 18px;
+      text-align: center;
+    }
+
+    .language-select {
+      margin: 20px auto;
+      font-size: 16px;
+    }
+
+        </style>
+    </head>
+    
+    <body>
+        <header>Contact Me</header>
+        
+        
+        
+    <nav>
+        <a href="PROJECT.html">Home</a>
+        <a href="ABOUT.html">About Me</a>
+        <a href="FUTURE.html">Future Profession</a>
+        <a href="CONTACT.html">Contact</a>
+    </nav>
+
+    <div class="language-select">
+        <label for="language">Choose your language: </label>
+        <select id="language">
+          <option value="english">English</option>
+          <option value="chinese">中文 (Chinese)</option>
+          <option value="malay">Bahasa Melayu (Malay)</option>
+        </select>
+      </div>
+
+
+      <div class="phone" id="phone">
+        <h2 id="title">My phone Number and E-mail</h2>
+        <p id="description">
+            (555) 729-4836  
+        </p>
+
+        <br/>
+
+        jane.doe.astro@gmail.com
+
+        <br/><br/>
+
+        <a href="https://forms.gle/8AjzzAR8aZVWeAtk9">Click here to submit a feedback</a>
+      </div>
+
+
+
+
+
+      <script>
+        const langSelect = document.getElementById("language");
+        const title = document.getElementById("title");
+        const description = document.getElementById("description");
+    
+        langSelect.addEventListener("change", () => {
+          const lang = langSelect.value;
+    
+          if (lang === "english") {
+            title.textContent = "My phone Number and E-mail";
+            
+          } else if (lang === "chinese") {
+            title.textContent = "我的电话号码和电子邮件";
+            
+          } else if (lang === "malay") {
+            title.textContent = "Nombor telefon dan E-mel saya";
+            
+          }
+        });
+      </script>
+
+    </body>
+
+    
+
+
+
+
+</html>

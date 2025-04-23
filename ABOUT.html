@@ -1,0 +1,149 @@
+<html>
+    <head>
+        <title>Wen Jun Webpage -  About me</title>
+        <style>
+        header {
+        background-color: #333;
+        color: white;
+        padding: 40px;       
+        font-size: 24px;     
+        text-align: center;
+    }
+
+    body {
+        background-color: rgb(39, 43, 43);
+        color: rgb(6, 236, 75);
+        text-align: center;
+    }
+
+    nav {
+      background-color: #555;
+      padding: 10px 0;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .language-select {
+      margin: 20px auto;
+      font-size: 16px;
+    }
+
+    .intro-box {
+      background-color: rgb(64, 71, 94);
+      color: #fafafa;
+      max-width: 50%;
+      margin:30px auto;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      font-size: 18px;
+      text-align: center;
+    }
+
+    .intro-box-2 {
+      background-color: rgb(64, 71, 94);
+      color: #fafafa;
+      max-width: 50%;
+      margin: 30px auto;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      font-size: 18px;
+      text-align: center;
+    }
+
+        </style>
+    </head>
+    <body>
+        <header>
+            About Me
+        </header>
+
+        <nav>
+            <a href="PROJECT.html">Home</a>
+            <a href="ABOUT.html">About Me</a>
+            <a href="FUTURE.html">Future Profession</a>
+            <a href="CONTACT.html">Contact</a>
+        </nav>
+        
+        <div class="language-select">
+            <label for="language">Choose your language: </label>
+            <select id="language">
+              <option value="english">English</option>
+              <option value="chinese">中文 (Chinese)</option>
+              <option value="malay">Bahasa Melayu (Malay)</option>
+            </select>
+          </div>
+
+
+        <div class="intro-box" id="intro-box">
+            <h2 id="title">This is me</h2>
+            <img src="https://shorturl.at/R8r65" alt="Profile Image"   style="width:50 height=50 ">
+            <p id="description">
+              My name is Lee Wen Jun,i am from malaysia and I am 16 years old now. Currently i am studying in Dignity for Children Foundation. My favourite subject is science, math, add math, ICT and etc.
+            </p>
+          </div>
+
+        <div class="intro-box-2" id="intro-box-2">
+            <h2 id="title2">My Hobby</h2>
+            <img src="https://shorturl.at/KZ6SH" alt="Profile Image "   width="900" height="500">
+            <p id="description2">
+              My hobby is playing basketball, i been playing basketball since 10 years old.
+            </p>
+          </div>
+
+          <script>
+            const langSelect = document.getElementById("language");
+            const title = document.getElementById("title");
+            const description = document.getElementById("description");
+        
+            langSelect.addEventListener("change", () => {
+              const lang = langSelect.value;
+        
+              if (lang === "english") {
+                title.textContent = "This is me";
+      description.textContent = "My name is Lee Wen Jun, I am from Malaysia and I am 16 years old now. Currently I am studying in Dignity for Children Foundation. My favourite subject is science, math, add math, ICT and etc.";
+
+      title2.textContent = "My Hobby";
+      description2.textContent = "My hobby is playing basketball. I've been playing basketball since I was 10 years old.";
+    } else if (lang === "chinese") {
+      title.textContent = "这是我";
+      description.textContent = "我叫李文俊,来自马来西亚,今年16岁。目前就读于儿童尊严基金会。我最喜欢的科目是科学、数学、附加数学、信息与通信技术等。";
+
+      title2.textContent = "我的爱好";
+      description2.textContent = "我的爱好是打篮球,我从10岁开始就打篮球了。";
+    } else if (lang === "malay") {
+      title.textContent = "Ini saya";
+      description.textContent = "Nama saya Lee Wen Jun, saya berasal dari Malaysia dan saya berumur 16 tahun sekarang. Saya sedang belajar di Yayasan Dignity for Children. Subjek kegemaran saya ialah sains, matematik, matematik tambahan, ICT dan lain-lain.";
+
+      title2.textContent = "Hobi Saya";
+      description2.textContent = "Hobi saya ialah bermain bola keranjang. Saya telah bermain sejak umur 10 tahun.";
+              }
+            });
+          </script>
+
+     
+
+         
+
+    </body>
+</html>
+
+
+
+
+
+
+
+
+

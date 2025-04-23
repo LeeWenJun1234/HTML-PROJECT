@@ -1,0 +1,146 @@
+<html lang="en">
+<head>
+    <title>Wen Jun Webpage - Home</title>
+  <meta charset="UTF-8">
+  <style>
+    header {
+      background-color: #333;
+      color: white;
+      padding: 40px;       
+      font-size: 24px;     
+      text-align: center;
+    }
+    body {
+        background-color: rgb(39, 43, 43);
+        color: rgb(6, 236, 75);
+        text-align: center;
+    }
+
+
+    nav {
+      background-color: #555;
+      padding: 10px 0;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+  
+
+
+    .intro-box {
+      background-color: rgb(64, 71, 94);
+      color: #fafafa;
+      max-width: 600px;
+      margin: 30px auto;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      font-size: 18px;
+    }
+
+
+      .language-select {
+      margin: 20px auto;
+      font-size: 16px;
+    }
+
+
+  </style>
+</head>
+<body>
+
+  <header>
+    Wen Jun Webpage
+  </header>
+
+
+<nav>
+    <a href="PROJECT.html">Home</a>
+    <a href="ABOUT.html">About Me</a>
+    <a href="Future.html">Future Profession</a>
+    <a href="CONTACT.html">Contact</a>
+</nav>
+
+
+
+ 
+
+ <div class="language-select">
+    <label for="language">Choose your language: </label>
+    <select id="language">
+      <option value="english">English</option>
+      <option value="chinese">中文 (Chinese)</option>
+      <option value="malay">Bahasa Melayu (Malay)</option>
+    </select>
+  </div>
+
+
+
+  <div class="intro-box" id="intro-box">
+    <h2 id="title">Welcome to my webpage about my future profession</h2>
+    <img src="https://shorturl.at/jZp1N" alt="Profile Image" style="width: 100%; border-radius: 10px;">
+    <p id="description">
+      My name is Lee Wen Jun, and I have been learning coding about HTML and Python for the past few months.
+    </p>
+  </div>
+
+
+  <script>
+    const langSelect = document.getElementById("language");
+    const title = document.getElementById("title");
+    const description = document.getElementById("description");
+
+    langSelect.addEventListener("change", () => {
+      const lang = langSelect.value;
+
+      if (lang === "english") {
+        title.textContent = "Welcome to my webpage about my future profession";
+        description.textContent = "My name is Lee Wen Jun, and I have been learning coding about HTML and Python for the past few months.";
+      } else if (lang === "chinese") {
+        title.textContent = "欢迎来到我的网页，关于我的未来职业";
+        description.textContent = "我叫李文俊，过去几个月我一直在学习 HTML 和 Python 编程。";
+      } else if (lang === "malay") {
+        title.textContent = "Selamat datang ke laman web saya mengenai profesion masa depan saya";
+        description.textContent = "Nama saya Lee Wen Jun, dan saya telah belajar pengaturcaraan HTML dan Python sejak beberapa bulan yang lalu.";
+      }
+    });
+  </script>
+
+
+
+
+
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

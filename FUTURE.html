@@ -1,0 +1,144 @@
+<html>
+    <head>
+        <title>Wen Jun Webpage - Future Profession</title>
+        <style>   
+        header {
+            background-color: #333;
+            color: white;
+            padding: 40px;       
+            font-size: 24px;     
+            text-align: center;
+        }
+
+        body {
+        background-color: rgb(39, 43, 43);
+        color: rgb(6, 236, 75);
+        text-align: center;
+    }
+
+    nav {
+      background-color: #555;
+      padding: 10px 0;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .language-select {
+      margin: 20px auto;
+      font-size: 16px;
+    }
+
+    .intro-box {
+      background-color: rgb(64, 71, 94);
+      color: #fafafa;
+      max-width: 1000%;
+      margin:30px auto;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      font-size: 18px;
+      text-align: center;
+    }
+
+    .reason {
+      background-color: rgb(124, 124, 124);
+      color: #fafafa;
+      max-width: 1000%;
+      margin:30px auto;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      font-size: 18px;
+      text-align: center;
+    }
+
+  
+        </style>
+    </head>
+
+    <body>
+        <header>
+            My Future Profession
+        </header>
+
+        <nav>
+            <a href="PROJECT.html">Home</a>
+            <a href="ABOUT.html">About Me</a>
+            <a href="FUTURE.html">Future Profession</a>
+            <a href="CONTACT.html">Contact</a>
+        </nav>
+
+        <div class="language-select">
+          <label for="language">Choose your language: </label>
+          <select id="language">
+            <option value="english">English</option>
+            <option value="chinese">中文 (Chinese)</option>
+            <option value="malay">Bahasa Melayu (Malay)</option>
+          </select>
+        </div>
+
+        
+        <div class="intro-box" id="intro-box">
+            <h2 id="title">My future profession</h2>
+            <img src="ChatGPT Image 2025年4月22日 20_26_39.png" alt="Profile Image"   width="500" height="500" >
+            <p id="description">
+              My future profession is being an Astronomer.
+            </p>
+
+            <br/>
+          <div class="reason" id="reason">
+            <h3 id="title2">Reason why i choose this</h3>
+            <p id="description2">
+              The reason i choose Astronomer it is because i have interest in space, and i also want to learn more about planet, universe and the stars. So in the end i think Astronomer is an exciting job to do. 
+            
+            </p>
+
+          </div>  
+          </div>
+
+
+          <script>
+            const langSelect = document.getElementById("language");
+            const title = document.getElementById("title");
+            const description = document.getElementById("description");
+        
+            langSelect.addEventListener("change", () => {
+              const lang = langSelect.value;
+        
+              if (lang === "english") {
+                title.textContent = "My future profession";
+      description.textContent = "My future profession is being an Astronomer.";
+
+      title2.textContent = "Reason why i choose this";
+      description2.textContent = "The reason i choose Astronomer it is because i have interest in space, and i also want to learn more about planet, universe and the stars. So in the end i think Astronomer is an exciting job to do.";
+    } else if (lang === "chinese") {
+      title.textContent = "我未来的职业";
+      description.textContent = "我未来的职业是成为一名天文学家。";
+
+      title2.textContent = "我选择这个的原因";
+      description2.textContent = "我选择天文学家的原因是我对太空感兴趣，也想了解更多关于行星、宇宙和星星的知识。所以总的来说，我认为天文学家是一份令人兴奋的工作。";
+    } else if (lang === "malay") {
+      title.textContent = "profesion masa depan saya";
+      description.textContent = "profesion masa depan saya ialah ahli astronomi.";
+
+      title2.textContent = "Sebab mengapa saya memilih ini";
+      description2.textContent = "Sebab saya memilih Ahli Astronomi kerana saya mempunyai minat dalam angkasa, dan saya juga ingin mengetahui lebih lanjut tentang planet, alam semesta dan bintang. Jadi pada akhirnya saya fikir Astronomer adalah kerja yang menarik untuk dilakukan.";
+              }
+            });
+          </script>
+
+        
+    </body>
+
+
+</html>
